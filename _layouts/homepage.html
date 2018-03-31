@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body id="homepage">
+{% include navigation.html %}
+
+<div class="content container">
+    <h2>This is a Jekyll - Bootstrap starter</h2>
+    <p>Demonstration of how to read JSON data file:</p>
+    <ul>
+    {% assign sorted_days = site.data.days | sort: 'date' | reverse %}
+    {% for day in sorted_days %}
+        <li>{{ day.name }} - {{ day.weather }}</li>
+    {% endfor %}
+    </ul>
+</div>
+</body>
+{% include footer.html %}
+</html>

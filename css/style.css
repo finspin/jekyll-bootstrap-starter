@@ -1,0 +1,88 @@
+html {
+    /*Solution for pushing footer to the bottom of the page*/
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+}
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 768px;
+    }
+}
+
+
+/********** CONTENT **********/
+
+.content {
+    padding-top: 50px;
+}
+
+@media (max-width: 575px) {
+    .content {
+        padding-top: 10px;
+    }
+}
+
+/********** NAVIGATION **********/
+
+.nav {
+    padding-right: 0.75em;
+}
+
+.nav span {
+    margin-left: 30px;
+}
+
+.navbar {
+    background-color: #333 !important;
+    border-bottom: 1px solid rgba(179, 179, 179, 0.3);
+    padding: 0.5rem 0;
+}
+
+.navbar-nav > li {
+    color: #f0f0f0 !important;
+}
+
+.navbar a {
+    color: #f0f0f0 !important;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.navbar .nav-item {
+    padding-left: 30px;
+}
+
+.navigation {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/********** FOOTER **********/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    color: #999;
+    padding-top: 40px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: #6670df;
+}
